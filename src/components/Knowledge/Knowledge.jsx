@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import './Knowledge.css'
+import Blog from '../Blog/Blog';
 
 const Knowledge = () => {
-    const [knowledge,setKnowledge] =useState([])
+    const [knowledges,setKnowledge] =useState([])
     useEffect(() =>{
         fetch('data.json')
         .then(res =>res.json())
@@ -10,12 +11,16 @@ const Knowledge = () => {
     },[])
     return (
         <div className='knowlegecafe-container'>
-            {/* <div className="knowledge-container">
-                <h2>this is knowledge{knowledge.length}</h2>
+            <div className="knowledge-container">
+                {
+                    knowledges.map(knowledge =>
+                    <Blog key ={knowledge.id} knowledge ={knowledge}>
+                    </Blog>)
+                }
             </div>
             <div className="time-container">
                 <h2>this is time</h2>
-            </div> */}
+            </div>
         </div>
     );
 };
