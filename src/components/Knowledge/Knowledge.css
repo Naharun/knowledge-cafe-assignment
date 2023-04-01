@@ -1,11 +1,14 @@
-.knowlegecafe-container{
+.knowlegecafe-container {
     display: grid;
     grid-template-columns: 2fr 1fr;
 }
-.time-container{
+
+.time-container {
     box-shadow: inset;
 }
-.spent-time{
+
+.spent-time {
     font-size: 24px;
     color: #6047EC;
 }
+

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import './Knowledge.css'
+import './Knowledge.css';
 import Blog from '../Blog/Blog';
+import Cart from '../Cart/Cart';
 
 const Knowledge = () => {
     const [knowledges, setKnowledges] = useState([]);
@@ -14,14 +15,14 @@ const Knowledge = () => {
             <div className="knowledge-container">
                 {
                     knowledges.map(knowledge =>
-                        <Blog key={knowledge.id} knowledge={knowledge}>
+                        <Blog 
+                        key={knowledge.id} 
+                        knowledge={knowledge}>
                         </Blog>)
                 }
             </div>
-            <div className="time-container">
-                <div className='spent-time'>
-                    <h6>Spent time on read : 177 min</h6>
-                </div>
+            <div>
+                <Cart></Cart>
             </div>
         </div>
     );

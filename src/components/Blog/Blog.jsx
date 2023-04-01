@@ -1,10 +1,12 @@
 import React from 'react';
-import './Blog.css'
+import './Blog.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBookmark } from '@fortawesome/free-solid-svg-icons';
 // import logo from '../../image/programming-skills.png';
 
 
 const Blog = (props) => {
-    const { name, date, time, image, author,info } = props.knowledge;
+    const { name, date, time, image, author,info,category } = props.knowledge;
     console.log(name);
     return (
         <div className='blog-container'>
@@ -17,9 +19,10 @@ const Blog = (props) => {
                         <p>{date}</p>
                     </div>
                 </div>
-                <p>{time}</p>
+                <p>{time} <FontAwesomeIcon icon={faBookmark} /></p>
             </div>
             <h4>{info}</h4>
+            <p>{category}</p>
             <a href="">Mark As Read</a>
         </div>
     );
