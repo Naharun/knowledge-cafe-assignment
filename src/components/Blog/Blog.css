@@ -1,9 +1,13 @@
 .blog-container{
     width: 845px;
+    margin-bottom: 24px;
+    margin-left: 8px;
 }
 .container-image{
     width: 845px;
     height: 450px;
+    padding: 8px;
+    border-radius: 8px;
 }
 .author-details{
     display: flex;
@@ -11,10 +15,12 @@
     align-items: center;
 }
 .author-info{
+    
     display: flex;
     align-items: center;
 }
 .author-details img{
+    margin-right: 16px;
     width: 60px;
     height: 60px;
     border-radius: 50%;
