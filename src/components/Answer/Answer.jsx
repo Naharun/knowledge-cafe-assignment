@@ -22,7 +22,8 @@ const Answer = () => {
             </div>
             <div>
                 <h2 className='container-title'>
-                    3.Props vs state
+                    3.Purpose of useEffect other than fetching data.
+
                 </h2>
                 <p className='container-description'>
                     Answer :
@@ -30,7 +31,8 @@ const Answer = () => {
             </div>
             <div>
                 <h2 className='container-title'>
-                    4.Props vs state
+                    4.How Does React work?
+
                 </h2>
                 <p className='container-description'>
                     Answer :
