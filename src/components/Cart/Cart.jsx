@@ -11,8 +11,8 @@ const Cart = (props) => {
         totalTimes = newTime;
     }
     return (
-        <div className='side-container'>
-            <h6 className='timer-title'>Spent time on read : {totalTimes} min</h6>
+        <div className='side-container w-100'>
+            <h6 className='timer-title text-center justify-content-center align-items-center'>Spent time on read : {totalTimes} min</h6>
             <div className='bookmark-section'>
                 <h3 className='bookmark-title'>Bookmarked Blogs: {carts.length}</h3>
                 {

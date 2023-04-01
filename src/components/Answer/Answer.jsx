@@ -1,9 +1,10 @@
 import React from 'react';
+import './Answer.css'
 
 const Answer = () => {
     return (
         <div className='answer-container'>
-            <div>
+            <div className='answer-container bg-info text-black container p-4 m-3 rounded'>
                 <h2 className='container-title'>
                     1.Props vs state
                 </h2>
@@ -14,7 +15,7 @@ const Answer = () => {
                                State :- It cannot be accessed by child component.
                 </p>
             </div>
-            <div>
+            <div className='answer-container bg-info text-black container p-4 m-3 rounded'>
                 <h2 className='container-title'>
                     2.How does useState work?
 
@@ -26,7 +27,7 @@ const Answer = () => {
                                 function to update this value.
                 </p>
             </div>
-            <div>
+            <div className='answer-container bg-info text-black container p-4 m-3 rounded'>
                 <h2 className='container-title'>
                     3.Purpose of useEffect other than fetching data.
 
@@ -39,7 +40,7 @@ const Answer = () => {
                                 components.
                 </p>
             </div>
-            <div>
+            <div className='answer-container bg-info text-black container p-4 m-3 rounded'>
                 <h2 className='container-title'>
                     4.How Does React work?
 
@@ -49,6 +50,7 @@ const Answer = () => {
                                 accept arbitrary inputs called Props (properties). We can use many 
                                 components above the code. ReactJs is one of the most popular javaScript
                                 libraries for mobile and web application development.
+                                
                 </p>
             </div>
         </div>
