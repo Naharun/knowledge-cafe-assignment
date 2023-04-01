@@ -10,9 +10,9 @@ const Blog = (props) => {
     const handleBookmark = props.handleBookmark;
     const markAsRead = props.markAsRead;
     return (
-        <div>
+        <div className='container mt-4'>
             <img className='w-100 h-50' src={image} alt="" />
-            <div className='author-details'>
+            <div className='author-details my-4'>
                 <div className='author-info'>
                     <img src={author} alt="" />
                     <div>

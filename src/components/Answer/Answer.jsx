@@ -3,7 +3,7 @@ import './Answer.css'
 
 const Answer = () => {
     return (
-        <div className='answer-container'>
+        <div className='answer-container container'>
             <div className='answer-container bg-info text-black container p-4 m-3 rounded'>
                 <h2 className='container-title'>
                     1.Props vs state
